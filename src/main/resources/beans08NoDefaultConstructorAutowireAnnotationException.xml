@@ -5,9 +5,14 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    THERE IS a default constructor in Human class BUT THERE ISN'T injection, because Autowired is OFF-->
+
     <bean id="heartObjectValue" class="com.edwincodex.spring.autowired.Heart"/>
 
     <bean id = "human" class="com.edwincodex.spring.autowired.Human"/>
 
 </beans>
 
+<!--        You are NOT YET ALIVE :(-->
+
+<!--        Process finished with exit code 0-->

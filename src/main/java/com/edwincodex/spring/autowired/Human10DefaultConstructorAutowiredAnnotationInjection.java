@@ -2,16 +2,16 @@ package com.edwincodex.spring.autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Human09DefaultConstructorAutowireAnnotationNoInjection {
+public class Human10DefaultConstructorAutowiredAnnotationInjection {
 
     @Autowired
-    public Human09DefaultConstructorAutowireAnnotationNoInjection(Heart heart) {
+    public Human10DefaultConstructorAutowiredAnnotationInjection(Heart heart) {
         System.out.println("By CONSTRUCTOR called with Heart Parameter");
         this.heart = heart;
     }
 
-    //    THERE IS a default constructor in Human class BUT THERE ISN'T injection, because Autowired is OFF
-    public Human09DefaultConstructorAutowireAnnotationNoInjection() {
+//    THERE IS a default constructor in Human class THERE ISN'T injection, because Autowired is ACTIVATED
+    public Human10DefaultConstructorAutowiredAnnotationInjection() {
     }
 
     public void setHeart(Heart heart) {
@@ -30,7 +30,8 @@ public class Human09DefaultConstructorAutowireAnnotationNoInjection {
     private Heart heart;
 }
 
-//    You are NOT YET ALIVE :(
+//    By CONSTRUCTOR called with Heart Parameter
+//    Your heart is pumping
+//    I'm Alive!
 //
 //        Process finished with exit code 0
-

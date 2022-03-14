@@ -4,13 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Human {
 
-//    THERE IS a constructor in Human class so THERE IS injection
     @Autowired
     public Human(Heart heart) {
         System.out.println("By CONSTRUCTOR called with Heart Parameter");
         this.heart = heart;
     }
 
+//    THERE IS a default constructor in Human class THERE ISN'T injection, because Autowired is ACTIVATED
     public Human() {
     }
 
@@ -30,3 +30,8 @@ public class Human {
     private Heart heart;
 }
 
+//    By CONSTRUCTOR called with Heart Parameter
+//    Your heart is pumping
+//    I'm Alive!
+//
+//        Process finished with exit code 0
