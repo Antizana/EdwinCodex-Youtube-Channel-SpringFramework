@@ -3,14 +3,14 @@ package com.edwincodex.spring.autowired;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-public class Human {
+public class Human16AutowiredOnDependecy {
 
-    public Human(Heart heart) {
+    public Human16AutowiredOnDependecy(Heart heart) {
         System.out.println("By CONSTRUCTOR called with Heart Parameter");
         this.heart = heart;
     }
 
-    public Human() {
+    public Human16AutowiredOnDependecy() {
     }
 
     public void setHeart(Heart heart) {
@@ -28,8 +28,14 @@ public class Human {
         }
     }
 
+//    Also runs with the dependency
     @Autowired
     @Qualifier("humanHeart")
     private Heart heart;
 }
 
+//    Your heart is pumping
+//    I'm Alive!
+//    Animal name: Human, number of hearts present: 1
+//
+//    Process finished with exit code 0
