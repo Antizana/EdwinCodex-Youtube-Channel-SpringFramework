@@ -7,10 +7,13 @@
 
     <bean id="heartObject" class="com.edwincodex.spring.autowired.Heart"/>
 
-    <bean id = "human" class="com.edwincodex.spring.autowired.Human" autowire="byName"/>
+    <bean id = "human" class="com.edwincodex.spring.autowired.Human">
+        <property name="heart" ref="heartObject" />
+    </bean>
 
 </beans>
 
-<!--        Your are NOT YET ALIVE :(-->
+<!--        Your heart is pumping-->
+<!--        I'm Alive!-->
 
 <!--        Process finished with exit code 0-->
