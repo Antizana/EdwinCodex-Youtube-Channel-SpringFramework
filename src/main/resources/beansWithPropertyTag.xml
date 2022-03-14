@@ -8,6 +8,7 @@
     <bean id="heartObject" class="com.edwincodex.spring.autowired.Heart"/>
 
     <bean id = "human" class="com.edwincodex.spring.autowired.Human">
+        <!--    Now property of name="heart" maps to heartObject so there IS injection-->
         <property name="heart" ref="heartObject" />
     </bean>
 

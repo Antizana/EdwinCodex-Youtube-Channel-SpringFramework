@@ -7,7 +7,9 @@ public class HumanWithoutInjectionNullException {
     }
 
     public void startPumping(){
-        heart.pump();
+//        heart isn't injected so, it's null and throws an exception calling pump from null
+
+                heart.pump();
     }
 
     private Heart heart;

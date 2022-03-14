@@ -5,6 +5,7 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--    The id="heart" ISN'T the SAME as attribute heart in Human class so there ISN'T injection-->
     <bean id="heartObject" class="com.edwincodex.spring.autowired.Heart"/>
 
     <bean id = "human" class="com.edwincodex.spring.autowired.Human" autowire="byName"/>
