@@ -9,14 +9,8 @@
 
     <context:annotation-config/>
 
-    <bean id="humanHeart" class="com.edwincodex.spring.autowired.Heart">
-        <property name="nameOfAnimal" value="Human"/>
-        <property name="noOfHeart" value="1"/>
-    </bean>
-    <bean id="octopusHeart" class="com.edwincodex.spring.autowired.Heart">
-        <property name="nameOfAnimal" value="Octopus"/>
-        <property name="noOfHeart" value="3"/>
-    </bean>
+    <bean id="humanHeart" class="com.edwincodex.spring.autowired.Heart"/>
+    <bean id="octopusHeart" class="com.edwincodex.spring.autowired.Heart"/>
 
     <bean id = "human" class="com.edwincodex.spring.autowired.Human"/>
 
