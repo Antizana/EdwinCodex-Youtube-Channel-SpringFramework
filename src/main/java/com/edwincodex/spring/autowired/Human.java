@@ -7,12 +7,13 @@ public class Human {
     }
 
     public void startPumping(){
-        heart.pump();
+        if (heart != null){
+            heart.pump();
+        } else {
+            System.out.println("Your are dead :(");
+        }
     }
 
     private Heart heart;
 }
 
-//    Exception in thread "main" java.lang.NullPointerException
-//        at com.edwincodex.spring.autowired.Human.startPumping(Human.java:10)
-//        at com.edwincodex.spring.autowired.Body.main(Body.java:14)
