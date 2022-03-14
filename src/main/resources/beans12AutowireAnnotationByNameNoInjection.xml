@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+    <!--    ISN'T resolved byType cause there is two possible objects, and ISN'T resolved byName cause there isn't
+     match with the class heart so THERE ISN'T injection-->
+    <bean id="humanHeart" class="com.edwincodex.spring.autowired.Heart"/>
+    <bean id="octopusHeart" class="com.edwincodex.spring.autowired.Heart"/>
+
+    <bean id = "human" class="com.edwincodex.spring.autowired.Human"/>
+
+</beans>
+
+<!--        mar. 13, 2022 11:33:14 P. M. org.springframework.context.support.AbstractApplicationContext refresh-->
+<!--        WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'human': Unsatisfied dependency expressed through method 'setHeart' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.edwincodex.spring.autowired.Heart' available: expected single matching bean but found 2: humanHeart,octopusHeart-->
+<!--        Exception in thread "main" org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'human': Unsatisfied dependency expressed through method 'setHeart' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.edwincodex.spring.autowired.Heart' available: expected single matching bean but found 2: humanHeart,octopusHeart-->

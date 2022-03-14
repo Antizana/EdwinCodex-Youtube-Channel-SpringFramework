@@ -2,17 +2,17 @@ package com.edwincodex.spring.autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Human10DefaultConstructorAutowiredAnnotationInjection {
+public class Human11AutowireAnnotationSetterInjection {
 
-    @Autowired
-    public Human10DefaultConstructorAutowiredAnnotationInjection(Heart heart) {
-        System.out.println("By CONSTRUCTOR called with Heart Argument");
+    public Human11AutowireAnnotationSetterInjection(Heart heart) {
+        System.out.println("By CONSTRUCTOR called with Heart Parameter");
         this.heart = heart;
     }
 
-    public Human10DefaultConstructorAutowiredAnnotationInjection() {
+    public Human11AutowireAnnotationSetterInjection() {
     }
 
+    @Autowired
     public void setHeart(Heart heart) {
         System.out.println("By Setter Method called with Heart Parameter");
         this.heart = heart;
@@ -29,8 +29,8 @@ public class Human10DefaultConstructorAutowiredAnnotationInjection {
     private Heart heart;
 }
 
-//    By CONSTRUCTOR called with Heart Parameter
+//    By Setter Method called with Heart Parameter
 //    Your heart is pumping
 //    I'm Alive!
 //
-//    Process finished with exit code 0
+//        Process finished with exit code 0

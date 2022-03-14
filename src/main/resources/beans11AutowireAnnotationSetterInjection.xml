@@ -10,8 +10,8 @@
 <!--    THERE IS a default constructor in Human class THERE ISN'T injection, because Autowired is ACTIVATED-->
     <context:annotation-config/>
 
-    <bean id="humanHeart" class="com.edwincodex.spring.autowired.Heart"/>
-    <bean id="octopusHeart" class="com.edwincodex.spring.autowired.Heart"/>
+    <!--    By default Autowire Annotation is by default BY TYPE, observe id = heartObjectValue-->
+    <bean id="heartObjectValue" class="com.edwincodex.spring.autowired.Heart"/>
 
     <bean id = "human" class="com.edwincodex.spring.autowired.Human"/>
 

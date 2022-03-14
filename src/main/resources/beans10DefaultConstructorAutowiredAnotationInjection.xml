@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!--    THERE IS a default constructor in Human class THERE ISN'T injection, because Autowired is ACTIVATED-->
+<!--    THERE IS a default constructor in Human class THERE IS injection, because Autowired is ACTIVATED-->
     <context:annotation-config/>
 
     <bean id="heartObjectValue" class="com.edwincodex.spring.autowired.Heart"/>
