@@ -28,7 +28,7 @@ public class Human16AutowiredOnDependecy {
         }
     }
 
-//    Also runs with the dependency
+//    Also runs with the dependency. Note neither setter method nor ANY constructor WEREN'T called
     @Autowired
     @Qualifier("humanHeart")
     private Heart heart;
