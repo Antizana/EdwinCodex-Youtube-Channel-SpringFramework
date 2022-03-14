@@ -2,11 +2,11 @@ package com.edwincodex.spring.autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Human08NoDefaultConstructorAutowireAnnotationNoInjection {
+public class Human08NoDefaultConstructorAutowireAnnotationException {
 
 //    There ISN'T a default constructor in Human class so THERE ISN'T injection
     @Autowired
-    public Human08NoDefaultConstructorAutowireAnnotationNoInjection(Heart heart) {
+    public Human08NoDefaultConstructorAutowireAnnotationException(Heart heart) {
         System.out.println("By CONSTRUCTOR called with Heart Parameter");
         this.heart = heart;
     }

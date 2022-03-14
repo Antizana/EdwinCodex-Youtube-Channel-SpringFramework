@@ -2,16 +2,16 @@ package com.edwincodex.spring.autowired;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Human {
+public class Human09DefaultConstructorAutowireAnnotationNoInjection {
 
 //    THERE IS a constructor in Human class so THERE IS injection
     @Autowired
-    public Human(Heart heart) {
+    public Human09DefaultConstructorAutowireAnnotationNoInjection(Heart heart) {
         System.out.println("By CONSTRUCTOR called with Heart Parameter");
         this.heart = heart;
     }
 
-    public Human() {
+    public Human09DefaultConstructorAutowireAnnotationNoInjection() {
     }
 
     public void setHeart(Heart heart) {
