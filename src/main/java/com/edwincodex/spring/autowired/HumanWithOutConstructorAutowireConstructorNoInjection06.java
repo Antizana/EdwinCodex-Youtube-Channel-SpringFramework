@@ -1,12 +1,8 @@
 package com.edwincodex.spring.autowired;
 
-public class Human {
+public class HumanWithOutConstructorAutowireConstructorNoInjection06 {
 
-//    THERE IS a constructor in Human class so THERE IS injection
-    public Human(Heart heart) {
-        System.out.println("By CONSTRUCTOR called with Heart Parameter");
-        this.heart = heart;
-    }
+//  There ISN'T a constructor in Human class so there ISN'T injection with Autowire = "constructor"
 
     public void setHeart(Heart heart) {
         System.out.println("By Setter Method called with Heart Parameter");
@@ -24,3 +20,6 @@ public class Human {
     private Heart heart;
 }
 
+//  You are NOT YET ALIVE :(-->
+//
+//  Process finished with exit code 0-->

@@ -7,7 +7,7 @@
 
     <bean id="heartObjectValue" class="com.edwincodex.spring.autowired.Heart"/>
 
-    <!--    THERE IS a constructor in Human class so THERE IS injection-->
+    <!--    There ISN'T a constructor in Human class so there ISN'T injection-->
     <bean id = "human" class="com.edwincodex.spring.autowired.Human" autowire="constructor"/>
 
 </beans>

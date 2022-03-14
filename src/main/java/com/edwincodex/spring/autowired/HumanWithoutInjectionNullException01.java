@@ -1,6 +1,6 @@
 package com.edwincodex.spring.autowired;
 
-public class HumanWithoutInjectionNullException {
+public class HumanWithoutInjectionNullException01 {
 
     public void setHeart(Heart heart) {
         this.heart = heart;

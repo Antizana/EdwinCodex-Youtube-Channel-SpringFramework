@@ -5,13 +5,15 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--    Now id="heart" is the SAME as attribute heart in Human class so there IS injection-->
     <bean id="heartObjectValue" class="com.edwincodex.spring.autowired.Heart"/>
 
+    <!--    THERE IS a constructor in Human class so THERE IS injection-->
     <bean id = "human" class="com.edwincodex.spring.autowired.Human" autowire="constructor"/>
 
 </beans>
 
-<!--        You are NOT YET ALIVE :(-->
+<!--        By CONSTRUCTOR called with Heart Parameter-->
+<!--        Your heart is pumping-->
+<!--        I'm Alive!-->
 
 <!--        Process finished with exit code 0-->
