@@ -1,8 +1,11 @@
 package com.edwincodex.spring.autowired;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Human {
 
 //    THERE IS a constructor in Human class so THERE IS injection
+    @Autowired
     public Human(Heart heart) {
         System.out.println("By CONSTRUCTOR called with Heart Parameter");
         this.heart = heart;

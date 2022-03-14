@@ -1,6 +1,6 @@
 package com.edwincodex.spring.autowired;
 
-public class HumanWithOutConstructorAutowireConstructorNoInjection06 {
+public class Human06WithOutConstructorAutowireConstructorNoInjection {
 
 //  There ISN'T a constructor in Human class so there ISN'T injection with Autowire = "constructor"
 

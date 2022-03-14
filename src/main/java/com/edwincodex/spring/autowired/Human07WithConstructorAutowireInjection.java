@@ -1,9 +1,9 @@
 package com.edwincodex.spring.autowired;
 
-public class HumanWithConstructorAutowireInjection07 {
+public class Human07WithConstructorAutowireInjection {
 
 //    THERE IS a constructor in Human class so THERE IS injection
-    public HumanWithConstructorAutowireInjection07(Heart heart) {
+    public Human07WithConstructorAutowireInjection(Heart heart) {
         System.out.println("By CONSTRUCTOR called with Heart Parameter");
         this.heart = heart;
     }
