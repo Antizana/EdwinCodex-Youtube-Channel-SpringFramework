@@ -29,8 +29,6 @@ public class Human12AutowireAnnotationByNameNoInjection {
     private Heart heart;
 }
 
-//    By Setter Method called with Heart Parameter
-//    Your heart is pumping
-//    I'm Alive!
-//
-//        Process finished with exit code 0
+//  mar. 13, 2022 11:33:14 P. M. org.springframework.context.support.AbstractApplicationContext refresh
+//  WARNING: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'human': Unsatisfied dependency expressed through method 'setHeart' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.edwincodex.spring.autowired.Heart' available: expected single matching bean but found 2: humanHeart,octopusHeart
+//  Exception in thread "main" org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'human': Unsatisfied dependency expressed through method 'setHeart' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.edwincodex.spring.autowired.Heart' available: expected single matching bean but found 2: humanHeart,octopusHeart

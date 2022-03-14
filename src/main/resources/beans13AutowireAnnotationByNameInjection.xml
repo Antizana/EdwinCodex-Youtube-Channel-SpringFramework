@@ -9,6 +9,8 @@
 
     <context:annotation-config/>
 
+    <!--    ISN'T resolved byType cause there is two possible objects, BUT IS resolved byName cause there is a
+     match (heart) with the class heart so THERE IS injection-->
     <bean id="heart" class="com.edwincodex.spring.autowired.Heart"/>
     <bean id="octopusHeart" class="com.edwincodex.spring.autowired.Heart"/>
 
@@ -16,3 +18,8 @@
 
 </beans>
 
+<!--        By Setter Method called with Heart Parameter-->
+<!--        Your heart is pumping-->
+<!--        I'm Alive!-->
+
+<!--        Process finished with exit code 0-->
