@@ -3,6 +3,7 @@ package com.edwincodex.spring.autowired;
 public class Human {
 
     public void setHeart(Heart heart) {
+        System.out.println("By Setter Method call with Heart Parameter");
         this.heart = heart;
     }
 
