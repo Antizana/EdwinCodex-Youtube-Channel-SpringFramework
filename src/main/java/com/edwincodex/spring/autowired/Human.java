@@ -10,7 +10,7 @@ public class Human {
         if (heart != null){
             heart.pump();
         } else {
-            System.out.println("Your are dead :(");
+            System.out.println("Your are NOT YET ALIVE :(");
         }
     }
 

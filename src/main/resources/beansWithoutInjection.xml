@@ -5,15 +5,10 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="heartObject" class="com.edwincodex.spring.autowired.Heart"/>
-
-    <bean id = "human" class="com.edwincodex.spring.autowired.Human">
-        <property name="heart" ref="heartObject" />
-    </bean>
+    <bean id = "human" class="com.edwincodex.spring.autowired.Human"/>
 
 </beans>
 
-<!--        Your heart is pumping-->
-<!--        I'm Alive!-->
+<!--        Your are NOT YET ALIVE :(-->
 
 <!--        Process finished with exit code 0-->
